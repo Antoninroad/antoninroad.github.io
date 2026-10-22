@@ -1,0 +1,232 @@
+/* Bobby AI : le même univers que les vidéos. Fond bleu nuit, un seul accent (l'or des cadres), Bobby en violet. */
+
+@font-face {
+  font-family: "Geist";
+  src: url("polices/geist-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("polices/geist-latin-ext-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  --fond: #090d15;
+  --fond-haut: #111a2b;
+  --surface: #111827;
+  --surface-2: #172033;
+  --texte: #f4f5f7;
+  --doux: #a3abbc;
+  --or: #f3c56b;
+  --or-fonce: #1c1405;
+  --trait: rgb(243 197 107 / 0.28);
+  --trait-neutre: rgb(255 255 255 / 0.08);
+  --rayon: 16px;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background:
+    radial-gradient(ellipse 120% 60% at 50% -10%, var(--fond-haut) 0%, var(--fond) 60%) fixed,
+    var(--fond);
+  color: var(--texte);
+  font-family: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Quelques étoiles fixes, comme le fond des vidéos */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1.5px 1.5px at 12% 18%, rgb(175 195 255 / 0.5), transparent),
+    radial-gradient(1.5px 1.5px at 78% 9%, rgb(175 195 255 / 0.4), transparent),
+    radial-gradient(2px 2px at 64% 42%, rgb(175 195 255 / 0.3), transparent),
+    radial-gradient(1.5px 1.5px at 22% 67%, rgb(175 195 255 / 0.35), transparent),
+    radial-gradient(1.5px 1.5px at 88% 78%, rgb(175 195 255 / 0.3), transparent),
+    radial-gradient(2px 2px at 41% 92%, rgb(175 195 255 / 0.25), transparent);
+}
+
+a { color: inherit; }
+
+.colonne {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 48px 20px 24px;
+}
+
+.icone { width: 1.15em; height: 1.15em; flex: none; }
+
+/* Accueil */
+.profil { text-align: center; margin-bottom: 40px; }
+.profil h1 { font-size: 34px; line-height: 1.1; letter-spacing: -0.03em; margin: 18px 0 8px; font-weight: 800; }
+.profil p { color: var(--doux); margin: 0 auto; max-width: 30ch; }
+
+.bobby .yeux { transform-origin: 50% 45%; transform-box: fill-box; }
+.bobby .antenne { transform-origin: center; transform-box: fill-box; }
+
+.bloc { margin: 0 0 32px; }
+.bloc h2 { font-size: 15px; font-weight: 700; color: var(--doux); margin: 0 0 14px; }
+
+.carte-guide {
+  position: relative;
+  display: grid;
+  grid-template-columns: 92px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 12px 18px 12px 12px;
+  border-radius: var(--rayon);
+  background: var(--surface);
+  border: 1px solid var(--trait-neutre);
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s;
+}
+.carte-guide img { width: 92px; height: 120px; object-fit: cover; object-position: center 45%; border-radius: 10px; display: block; }
+.carte-guide .icone { color: var(--or); width: 22px; height: 22px; }
+.carte-guide:hover { border-color: var(--trait); transform: translateY(-2px); }
+.carte-guide:active { transform: scale(0.985); }
+
+/* Le dernier guide : le cadre doré des vidéos */
+.carte-guide.grande {
+  grid-template-columns: 1fr;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid var(--or);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.5), 0 10px 40px rgb(243 197 107 / 0.16);
+}
+.carte-guide.grande img { width: 100%; height: 300px; border-radius: 0; object-position: center 42%; }
+.carte-guide.grande .carte-texte { padding: 18px 20px 22px; }
+.carte-guide.grande .icone { position: absolute; top: 14px; right: 14px; padding: 9px; width: 40px; height: 40px; border-radius: 50%; background: var(--or); color: var(--or-fonce); }
+
+.carte-texte { display: grid; gap: 4px; min-width: 0; }
+.carte-date { font-size: 13px; font-weight: 600; color: var(--or); }
+.carte-titre { font-size: 19px; font-weight: 750; line-height: 1.25; letter-spacing: -0.015em; }
+.carte-sous { font-size: 15px; color: var(--doux); line-height: 1.45; }
+.carte-guide:not(.grande) .carte-sous { display: none; }
+
+.bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 20px;
+  border-radius: var(--rayon);
+  background: var(--or);
+  color: var(--or-fonce);
+  font-weight: 750;
+  font-size: 17px;
+  text-decoration: none;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.2s;
+}
+.bouton:hover { filter: brightness(1.06); }
+.bouton:active { transform: scale(0.98); }
+
+/* Guide */
+.retour { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; margin-bottom: 28px; }
+.guide-tete h1 { font-size: clamp(30px, 8vw, 40px); line-height: 1.1; letter-spacing: -0.03em; margin: 8px 0 12px; font-weight: 800; }
+.guide-sous { color: var(--doux); font-size: 18px; margin: 0 0 24px; }
+
+.lien-principal { margin: 0 0 28px; }
+.lien-principal p { color: var(--doux); font-size: 15px; margin: 12px 0 0; }
+
+.video {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto 32px;
+  border-radius: var(--rayon);
+  border: 2px solid var(--or);
+  background: #000;
+}
+
+.fiche { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 0 36px; }
+.fiche-case { padding: 14px 16px; border-radius: var(--rayon); background: var(--surface); border: 1px solid var(--trait-neutre); display: grid; gap: 4px; }
+.fiche-case span { font-size: 13px; color: var(--doux); font-weight: 600; }
+.fiche-case strong { font-size: 15px; line-height: 1.4; font-weight: 650; }
+
+.texte h1 { font-size: 34px; letter-spacing: -0.03em; line-height: 1.1; }
+.texte h2 { font-size: 23px; line-height: 1.25; letter-spacing: -0.02em; margin: 40px 0 10px; font-weight: 750; }
+.texte p, .texte li { color: #dfe3ea; }
+.texte ul, .texte ol { padding-left: 1.2em; }
+.texte li { margin: 6px 0; }
+.texte li::marker { color: var(--or); font-weight: 700; }
+.texte strong { color: var(--texte); }
+.texte blockquote {
+  margin: 20px 0;
+  padding: 16px 18px;
+  border-radius: var(--rayon);
+  background: var(--surface-2);
+  border-left: 3px solid var(--or);
+}
+.texte blockquote p { margin: 0; }
+
+.sources { margin-top: 44px; }
+.sources ul { padding-left: 1.2em; margin: 0 0 8px; }
+.sources li { margin: 4px 0; color: var(--doux); font-size: 15px; }
+.sources p { color: var(--doux); font-size: 14px; margin: 0; }
+
+.carte-insta {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 18px;
+  border-radius: var(--rayon);
+  background: var(--surface);
+  border: 1px solid var(--trait);
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+.carte-insta > span { display: grid; gap: 2px; }
+.carte-insta strong { font-size: 17px; }
+.carte-insta span span { color: var(--doux); font-size: 15px; }
+.carte-insta .icone { color: var(--or); width: 22px; height: 22px; }
+
+.pied { max-width: 600px; margin: 0 auto; padding: 8px 20px 40px; color: var(--doux); font-size: 13px; text-align: center; }
+.pied p { margin: 4px 0; }
+
+a:focus-visible, .bouton:focus-visible { outline: 3px solid var(--or); outline-offset: 3px; border-radius: var(--rayon); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .profil, .bloc, .bouton, .guide-tete, .lien-principal, .video, .fiche, .texte {
+    animation: monte 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .bloc { animation-delay: 0.08s; }
+  .bouton { animation-delay: 0.16s; }
+  .lien-principal { animation-delay: 0.06s; }
+  .video, .fiche { animation-delay: 0.12s; }
+  /* Bobby cligne des yeux, son antenne brille : il est vivant, rien de plus */
+  .bobby .yeux { animation: cligne 4.2s infinite; }
+  .bobby .antenne { animation: brille 2.4s ease-in-out infinite; }
+}
+
+@keyframes monte { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes cligne { 0%, 94%, 100% { transform: scaleY(1); } 97% { transform: scaleY(0.15); } }
+@keyframes brille { 0%, 100% { opacity: 0.15; } 50% { opacity: 0.45; } }
+
+@media (min-width: 720px) {
+  .colonne { padding-top: 72px; }
+  .carte-guide.grande img { height: 360px; }
+}

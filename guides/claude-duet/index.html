@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Claude Duet : l’agent qui bosse pendant que tu dors | Bobby AI</title>
+<meta name="description" content="Ce qu’il fait, qui y a accès, et comment t’en servir sans cramer ta limite.">
+<meta property="og:title" content="Claude Duet : l’agent qui bosse pendant que tu dors | Bobby AI">
+<meta property="og:description" content="Ce qu’il fait, qui y a accès, et comment t’en servir sans cramer ta limite.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://antoninroad.github.io/guides/claude-duet/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://antoninroad.github.io/guides/claude-duet/apercu.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#090D15">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../statique/polices/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../statique/style.css">
+</head>
+<body>
+<main class="colonne guide">
+  <a class="retour" href="../../"><svg class="bobby petit" width="34" height="26" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span>Bobby AI</span></a>
+  <header class="guide-tete">
+    <p class="carte-date">Guide · 22 octobre 2026</p>
+    <h1>Claude Duet : l’agent qui bosse pendant que tu dors</h1>
+    <p class="guide-sous">Ce qu’il fait, qui y a accès, et comment t’en servir sans cramer ta limite.</p>
+  </header>
+  <section class="lien-principal">
+    <a class="bouton" href="https://claude.com/product/claude-duet" rel="noopener"><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M87.5,151.52l64-64a12,12,0,0,1,17,17l-64,64a12,12,0,0,1-17-17Zm131-114a60.08,60.08,0,0,0-84.87,0L103.51,67.61a12,12,0,0,0,17,17l30.07-30.06a36,36,0,0,1,50.93,50.92L171.4,135.52a12,12,0,1,0,17,17l30.08-30.06A60.09,60.09,0,0,0,218.45,37.55ZM135.52,171.4l-30.07,30.08a36,36,0,0,1-50.92-50.93l30.06-30.07a12,12,0,0,0-17-17L37.55,133.58a60,60,0,0,0,84.88,84.87l30.06-30.07a12,12,0,0,0-17-17Z"/></svg>Rejoindre la liste d’attente</a>
+    <p>C’est la page officielle d’Anthropic. Pour l’instant, l’accès commence par les abonnés Pro et Max aux États-Unis.</p>
+  </section>
+  <video class="video" src="video.mp4" poster="affiche.jpg" controls playsinline preload="none" width="540" height="960"></video>
+  <section class="fiche" aria-label="La fiche"><div class="fiche-case"><span>Sorti le</span><strong>21 octobre 2026, en aperçu</strong></div><div class="fiche-case"><span>Pour qui</span><strong>Abonnés Pro et Max, États-Unis d’abord</strong></div><div class="fiche-case"><span>Où</span><strong>Appli iPhone, Android et claude.ai</strong></div><div class="fiche-case"><span>Le modèle</span><strong>Claude Opus 5.5</strong></div><div class="fiche-case"><span>Le prix</span><strong>Inclus dans Pro et Max</strong></div><div class="fiche-case"><span>Les applis</span><strong>Gmail, Slack, Stripe, Shopify, Canva…</strong></div></section>
+  <article class="texte"><h2>Ce que fait Duet</h2>
+<p>Duet, c’est Claude en mode agent. Tu ne lui poses pas une question : tu lui confies du travail, et il s’en occupe.</p>
+<ul>
+<li><strong>Chaque matin</strong>, il t’envoie un court brief de ce qui compte dans tes applis connectées.</li>
+<li><strong>Pendant la journée</strong>, il surveille tes applis et ne te dérange que quand il faut.</li>
+<li><strong>Quand une tâche est finie</strong> ou qu’il faut la relire, il te prévient.</li>
+</ul>
+<p>Tu lui parles dans un seul fil de discussion, à l’écrit ou à la voix. Ta mémoire, tes skills et tes applis déjà connectées dans Claude le suivent. Presque rien à installer.</p>
+<h2>Ce qu’il peut faire pour toi</h2>
+<p>Les exemples donnés par Anthropic :</p>
+<ul>
+<li>Retrouver les messages Gmail et Slack que tu as ratés, et t’aider à répondre.</li>
+<li>Chercher les factures impayées dans QuickBooks ou Stripe, et préparer les relances.</li>
+<li>Écrire tes mails de relance à partir de l’historique HubSpot.</li>
+<li>Préparer un contrat à signer dans Docusign.</li>
+<li>Transformer un lancement de produit en campagne Canva.</li>
+<li>Monter et gérer une boutique Shopify.</li>
+<li>Construire des tableaux de bord, des prévisions ou des prototypes.</li>
+</ul>
+<h2>Il a son propre ordi</h2>
+<p>Duet tourne sur une machine virtuelle, avec son propre navigateur. Ton ordi et ton téléphone peuvent rester éteints : lui continue de bosser.</p>
+<h2>Ce qu’il ne fait jamais sans toi</h2>
+<p>Avant d’<strong>envoyer un message</strong>, de <strong>payer</strong>, de <strong>signer un document</strong> ou de <strong>supprimer</strong> quoi que ce soit, il te montre l’action et attend ton accord.</p>
+<p>Même avec ton accord, deux choses lui sont interdites : acheter ou vendre des actions, et déplacer de l’argent entre des comptes.</p>
+<p>Côté données, voici ce qu’Anthropic annonce :</p>
+<ul>
+<li>Il ne voit jamais directement tes mots de passe ni tes jetons de connexion.</li>
+<li>Il refuse de partager tes numéros de carte bancaire et tes papiers d’identité.</li>
+<li>Tes infos de santé et de finances perso ne partent que si tu le lui demandes clairement.</li>
+<li>Quand il paie avec Link, ta vraie carte n’est pas partagée.</li>
+<li>Tu peux déconnecter n’importe quelle appli quand tu veux.</li>
+</ul>
+<h2>Le piège : ta limite</h2>
+<p>C’est le point que personne ne regarde. Duet partage les limites d’usage de ton abonnement avec le reste de Claude.</p>
+<ul>
+<li>Il vérifie tes comptes <strong>toutes les quelques heures</strong>, et ces vérifications comptent dans ta limite.</li>
+<li>Les grosses tâches, comme un modèle financier ou une présentation, demandent plus de travail. Donc elles consomment plus.</li>
+</ul>
+<p>Anthropic le dit lui-même : vérifier en continu viderait ta limite bien plus vite. C’est pour ça qu’il ne regarde que toutes les quelques heures.</p>
+<h2>Mes 3 conseils pour démarrer</h2>
+<blockquote>
+<p>Ce sont mes conseils, pas des règles d’Anthropic.</p>
+</blockquote>
+<ol>
+<li><strong>Branche 2 applis au début, pas 10.</strong> Celles où tu perds le plus de temps.</li>
+<li><strong>Regarde ta jauge d’usage chaque jour la première semaine.</strong> Tu verras vite ce que Duet consomme.</li>
+<li><strong>Lis chaque action avant de cliquer « Valider ».</strong> Il te montre exactement ce qu’il va faire : prends 5 secondes.</li>
+</ol>
+<p>Bonus : tu peux choisir de quoi il te parle et à quelle fréquence. Moins de messages, moins de bruit.</p>
+<h2>Ce qu’il fait encore mal</h2>
+<p>Anthropic est honnête là-dessus :</p>
+<ul>
+<li>Les courses perso, comme réserver des billets : il est encore moins bon.</li>
+<li>Tu ne peux pas encore voir son navigateur pendant qu’il travaille.</li>
+<li>Il apprend encore quand te déranger et quand se taire.</li>
+</ul>
+<h2>Tu es en France ?</h2>
+<p>L’aperçu commence par les abonnés Pro et Max aux États-Unis. Rien n’est annoncé pour la France pour l’instant.</p>
+<p>La liste d’attente est sur la page produit, et Anthropic dit qu’il prévient par email quand l’accès est prêt. Garde ce guide sous la main pour le jour où ça ouvre.</p></article>
+  <section class="bloc sources"><h2>Sources</h2><ul><li><a href="https://claude.com/resources/articles/claude-duet" rel="noopener">Annonce officielle d’Anthropic</a></li><li><a href="https://claude.com/product/claude-duet" rel="noopener">Page produit Claude Duet</a></li><li><a href="https://support.claude.com/en/articles/12138966-release-notes" rel="noopener">Notes de version de Claude (21 octobre 2026)</a></li></ul><p>Vérifié le 22 octobre 2026.</p></section>
+  <section class="bloc">
+    <h2>Pour aller plus loin</h2>
+    <a class="carte-insta" href="https://www.instagram.com/shan.ksya/" rel="noopener"><svg class="bobby petit" width="56" height="43" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span><strong>Une actu IA comme ça chaque jour</strong><span>Suis Bobby AI sur Instagram</span></span><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg></a>
+    
+  </section>
+</main>
+<footer class="pied">
+  <p>Bobby AI n’est pas lié aux entreprises citées. Les infos viennent de leurs pages officielles.</p>
+  <p><a href="../../mentions-legales/">Mentions légales</a></p>
+</footer>
+</body>
+</html>
