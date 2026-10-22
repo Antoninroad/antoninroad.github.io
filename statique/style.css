@@ -222,7 +222,8 @@ a:focus-visible, .bouton:focus-visible { outline: 3px solid var(--or); outline-o
   .bobby .antenne { animation: brille 2.4s ease-in-out infinite; }
 }
 
-@keyframes monte { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+/* Pas d'opacité : le texte reste lisible même si le navigateur (celui d'Instagram par exemple) retarde l'animation */
+@keyframes monte { from { transform: translateY(12px); } to { transform: none; } }
 @keyframes cligne { 0%, 94%, 100% { transform: scaleY(1); } 97% { transform: scaleY(0.15); } }
 @keyframes brille { 0%, 100% { opacity: 0.15; } 50% { opacity: 0.45; } }
 
