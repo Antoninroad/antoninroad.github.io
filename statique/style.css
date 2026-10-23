@@ -181,6 +181,9 @@ a { color: inherit; }
   border-left: 3px solid var(--or);
 }
 .texte blockquote p { margin: 0; }
+.texte code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.88em; background: var(--surface-2); padding: 2px 6px; border-radius: 6px; color: var(--or); }
+.texte pre { margin: 16px 0; padding: 14px 16px; border-radius: var(--rayon); background: var(--surface); border: 1px solid var(--trait-neutre); overflow-x: auto; }
+.texte pre code { padding: 0; background: none; color: #dfe3ea; font-size: 14px; line-height: 1.5; }
 
 .sources { margin-top: 44px; }
 .sources ul { padding-left: 1.2em; margin: 0 0 8px; }
