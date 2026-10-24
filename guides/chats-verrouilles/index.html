@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ChatGPT : cache tes conversations derrière un code | Bobby AI</title>
+<meta name="description" content="Comment verrouiller un chat, où le retrouver, et le piège du code oublié qui efface tout.">
+<meta property="og:title" content="ChatGPT : cache tes conversations derrière un code | Bobby AI">
+<meta property="og:description" content="Comment verrouiller un chat, où le retrouver, et le piège du code oublié qui efface tout.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://antoninroad.github.io/guides/chats-verrouilles/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://antoninroad.github.io/guides/chats-verrouilles/apercu.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#090D15">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../statique/polices/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../statique/style.css">
+</head>
+<body>
+<main class="colonne guide">
+  <a class="retour" href="../../"><svg class="bobby petit" width="34" height="26" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span>Bobby AI</span></a>
+  <header class="guide-tete">
+    <p class="carte-date">Guide · 24 octobre 2026</p>
+    <h1>ChatGPT : cache tes conversations derrière un code</h1>
+    <p class="guide-sous">Comment verrouiller un chat, où le retrouver, et le piège du code oublié qui efface tout.</p>
+  </header>
+  <section class="lien-principal">
+    <a class="bouton" href="https://help.openai.com/en/articles/20001411-using-locked-chats-in-chatgpt" rel="noopener"><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M87.5,151.52l64-64a12,12,0,0,1,17,17l-64,64a12,12,0,0,1-17-17Zm131-114a60.08,60.08,0,0,0-84.87,0L103.51,67.61a12,12,0,0,0,17,17l30.07-30.06a36,36,0,0,1,50.93,50.92L171.4,135.52a12,12,0,1,0,17,17l30.08-30.06A60.09,60.09,0,0,0,218.45,37.55ZM135.52,171.4l-30.07,30.08a36,36,0,0,1-50.92-50.93l30.06-30.07a12,12,0,0,0-17-17L37.55,133.58a60,60,0,0,0,84.88,84.87l30.06-30.07a12,12,0,0,0-17-17Z"/></svg>La page officielle d’OpenAI</a>
+    <p>C’est la page d’aide officielle d’OpenAI, en anglais. La fonction arrive petit à petit : si tu ne la vois pas encore, ton compte ne l’a pas encore reçue.</p>
+  </section>
+  <video class="video" src="video.mp4" poster="affiche.jpg" controls playsinline preload="none" width="540" height="960"></video>
+  <section class="fiche" aria-label="La fiche"><div class="fiche-case"><span>Sorti le</span><strong>20 octobre 2026</strong></div><div class="fiche-case"><span>Pour qui</span><strong>Toutes les offres, même Gratuit</strong></div><div class="fiche-case"><span>Pour l’ouvrir</span><strong>Code à 4 chiffres, ou Face ID</strong></div><div class="fiche-case"><span>Où le trouver</span><strong>Projets, puis Locked chats</strong></div><div class="fiche-case"><span>Code oublié</span><strong>Le réinitialiser efface tout</strong></div><div class="fiche-case"><span>Chiffré ?</span><strong>Non : caché, pas chiffré</strong></div></section>
+  <article class="texte"><h2>Ce qui est sorti le 20 octobre</h2>
+<p>OpenAI a ajouté les <strong>chats verrouillés</strong> dans ChatGPT. Tu choisis une conversation, tu la verrouilles, et elle disparaît de la vue :</p>
+<ul>
+<li>de ton <strong>historique</strong>,</li>
+<li>de tes <strong>chats épinglés</strong>,</li>
+<li>de la <strong>recherche</strong> dans tes conversations.</li>
+</ul>
+<p>Pour la rouvrir, il faut ton <strong>code à 4 chiffres</strong>. Sur iPhone, Face ID ou Touch ID peuvent le remplacer ; sur Android, le déverrouillage de ton téléphone.</p>
+<p>OpenAI le présente comme une façon de garder une conversation sensible hors de vue quand tu <strong>partages ton écran</strong> ou que tu utilises un <strong>appareil partagé</strong>.</p>
+<h2>Comment verrouiller un chat</h2>
+<ol>
+<li>Ouvre le menu <strong>•••</strong> de la conversation.</li>
+<li>Choisis <strong>Lock chat</strong> (le nom peut être traduit dans ton appli).</li>
+<li>Confirme.</li>
+<li>La première fois, ChatGPT te demande de <strong>créer ton code</strong> : 4 chiffres, deux fois.</li>
+</ol>
+<p>Le chat part alors dans tes chats verrouillés. Il peut falloir un peu de temps pour qu’il sorte aussi des résultats de recherche.</p>
+<p>Une fois ton premier chat verrouillé, tu peux aussi <strong>démarrer une nouvelle conversation directement verrouillée</strong>, depuis l’espace des chats verrouillés.</p>
+<h2>Où retrouver tes chats verrouillés</h2>
+<p>Va dans <strong>Projets</strong>, puis <strong>Locked chats</strong>. Tape ton code, et choisis la conversation.</p>
+<p>L’accès se referme tout seul :</p>
+<ul>
+<li><strong>Sur téléphone</strong> : après 1 minute loin des chats verrouillés, ou 1 minute en arrière-plan.</li>
+<li><strong>Sur le web</strong> : quand tu rafraîchis la page ou fermes l’onglet, et après un moment loin de l’onglet. Un nouvel onglet redemande le code.</li>
+<li><strong>Partout</strong> : le bouton <strong>Lock now</strong> referme l’accès tout de suite.</li>
+</ul>
+<h2>Le piège : le code oublié</h2>
+<p>Lis bien cette partie.</p>
+<ul>
+<li><strong>Changer</strong> ton code (en connaissant l’ancien) ne supprime rien. C’est dans les réglages, partie sécurité (en anglais : Settings, Security and login, Account PIN).</li>
+<li><strong>Réinitialiser</strong> ton code parce que tu l’as oublié <strong>supprime définitivement tous tes chats verrouillés</strong>, ce que ChatGPT a retenu uniquement dans ces chats, et les fichiers protégés par l’ancien code.</li>
+<li>Le <strong>support d’OpenAI ne peut rien récupérer</strong>. Ton administrateur, si tu es sur un compte d’équipe, ne peut pas non plus réinitialiser ton code ni ouvrir tes chats.</li>
+</ul>
+<p>Oublier ton code ne supprime rien tout seul. C’est la réinitialisation qui efface tout.</p>
+<h2>Ce que ça ne fait pas</h2>
+<p>Verrouiller un chat change <strong>où il s’affiche</strong> et <strong>comment tu l’ouvres</strong>. Selon OpenAI, ça ne :</p>
+<ul>
+<li><strong>chiffre pas</strong> la conversation de bout en bout, et ce n’est pas un coffre chiffré à part ;</li>
+<li><strong>change pas</strong> combien de temps OpenAI garde le chat ;</li>
+<li><strong>change pas</strong> ton réglage d’amélioration des modèles ;</li>
+<li><strong>efface pas</strong> ce que ChatGPT avait retenu sur toi avant que tu verrouilles le chat.</li>
+</ul>
+<p>Et quelqu’un qui arrive à ouvrir un chat verrouillé peut toujours copier son contenu.</p>
+<h2>Mes 3 conseils pour ne rien perdre</h2>
+<blockquote>
+<p>Ce sont mes conseils, pas des règles d’OpenAI.</p>
+</blockquote>
+<ol>
+<li><strong>Verrouille ce qui parle d’argent et de clients.</strong> Devis, tarifs, chiffres, noms de clients : c’est ce que tu ne veux pas voir apparaître pendant un partage d’écran.</li>
+<li><strong>Range ton code dans ton gestionnaire de mots de passe.</strong> Un code oublié puis réinitialisé, c’est tout perdu, sans retour possible.</li>
+<li><strong>Avant de partager ton écran, appuie sur Lock now et regarde tes autres appareils.</strong> OpenAI prévient qu’un appareil où ChatGPT est déjà ouvert peut encore afficher le titre du chat tant que sa liste ne s’est pas rafraîchie.</li>
+</ol>
+<h2>Ce qui ne marche pas encore</h2>
+<p>Certaines conversations ne peuvent pas être verrouillées :</p>
+<ul>
+<li>les chats temporaires, archivés ou de groupe ;</li>
+<li>les chats créés depuis un lien partagé ;</li>
+<li>les chats avec une tâche programmée, un enregistrement de réunion ou une tâche en arrière-plan ;</li>
+<li>les conversations Codex.</li>
+</ul>
+<p>Autres limites :</p>
+<ul>
+<li>tu ne peux <strong>pas chercher</strong> dans tous tes chats verrouillés d’un coup ;</li>
+<li>un chat verrouillé ne peut être ni archivé, ni épinglé, ni partagé ;</li>
+<li>si tu verrouilles un chat d’un projet, il <strong>sort du projet</strong> et perd ses instructions et ses fichiers ;</li>
+<li>si le chat avait déjà un <strong>lien de partage</strong>, le verrouiller ne supprime pas ce lien : supprime-le à part ;</li>
+<li>dans l’appli ordinateur, la voix ne marche pas dans un chat verrouillé.</li>
+</ul>
+<h2>Tu es en France ?</h2>
+<p>OpenAI ne donne pas de liste de pays. Ce qui est écrit :</p>
+<ul>
+<li><strong>Toutes les offres</strong> y ont droit : Gratuit, Go, Plus, Pro, et aussi Business, Enterprise et Edu.</li>
+<li>Ça marche <strong>sur le web</strong>, dans les <strong>applis iPhone et Android</strong>, et dans la <strong>nouvelle appli ChatGPT pour Mac et Windows</strong>.</li>
+<li>Ça <strong>arrive petit à petit</strong>. Si tu ne vois pas l’option dans le menu ••• d’un chat, ton compte ne l’a pas encore.</li>
+</ul>
+<p>C’est gratuit et ça prend quelques secondes : verrouille tes deux ou trois chats les plus sensibles dès que l’option apparaît.</p></article>
+  <section class="bloc sources"><h2>Sources</h2><ul><li><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" rel="noopener">Notes de version de ChatGPT (20 octobre 2026)</a></li><li><a href="https://help.openai.com/en/articles/20001411-using-locked-chats-in-chatgpt" rel="noopener">Aide OpenAI : utiliser les chats verrouillés</a></li></ul><p>Vérifié le 24 octobre 2026.</p></section>
+  <section class="bloc">
+    <h2>Pour aller plus loin</h2>
+    <a class="carte-insta" href="https://www.instagram.com/shan.ksya/" rel="noopener"><svg class="bobby petit" width="56" height="43" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span><strong>Une actu IA comme ça chaque jour</strong><span>Suis Bobby AI sur Instagram</span></span><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg></a>
+    <a class="carte-guide" href="../../guides/notion-agents/">
+  <img src="../../guides/notion-agents/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">24 octobre 2026</span>
+    <span class="carte-titre">Les agents Notion bossent 24 heures, pour environ 90 % moins cher</span>
+    <span class="carte-sous">Ce qui a changé le 19 octobre, comment marche le mode Auto, et comment ne pas cramer tes crédits.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a><a class="carte-guide" href="../../guides/activepieces/">
+  <img src="../../guides/activepieces/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">24 octobre 2026</span>
+    <span class="carte-titre">L’alternative gratuite et open source à Zapier</span>
+    <span class="carte-sous">Activepieces relie tes applis en visuel, avec des étapes IA. Ce que couvre le plan gratuit, ta première automatisation, et le piège des crédits.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a>
+  </section>
+</main>
+<footer class="pied">
+  <p>Bobby AI n’est pas lié aux entreprises citées. Les infos viennent de leurs pages officielles.</p>
+  <p><a href="../../mentions-legales/">Mentions légales</a></p>
+</footer>
+</body>
+</html>
