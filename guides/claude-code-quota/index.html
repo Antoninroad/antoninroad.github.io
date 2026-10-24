@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La commande qui montre ce qui mange ton quota Claude Code | Bobby AI</title>
+<meta name="description" content="/usage te dit quelle part de ton forfait part dans tes sous-agents, tes skills ou tes serveurs MCP. Comment le lire, et mes réflexes pour économiser.">
+<meta property="og:title" content="La commande qui montre ce qui mange ton quota Claude Code | Bobby AI">
+<meta property="og:description" content="/usage te dit quelle part de ton forfait part dans tes sous-agents, tes skills ou tes serveurs MCP. Comment le lire, et mes réflexes pour économiser.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://antoninroad.github.io/guides/claude-code-quota/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://antoninroad.github.io/guides/claude-code-quota/apercu.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#090D15">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../statique/polices/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../statique/style.css">
+</head>
+<body>
+<main class="colonne guide">
+  <a class="retour" href="../../"><svg class="bobby petit" width="34" height="26" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span>Bobby AI</span></a>
+  <header class="guide-tete">
+    <p class="carte-date">Guide · 24 octobre 2026</p>
+    <h1>La commande qui montre ce qui mange ton quota Claude Code</h1>
+    <p class="guide-sous">/usage te dit quelle part de ton forfait part dans tes sous-agents, tes skills ou tes serveurs MCP. Comment le lire, et mes réflexes pour économiser.</p>
+  </header>
+  <section class="lien-principal">
+    <a class="bouton" href="https://code.claude.com/docs/en/costs" rel="noopener"><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M87.5,151.52l64-64a12,12,0,0,1,17,17l-64,64a12,12,0,0,1-17-17Zm131-114a60.08,60.08,0,0,0-84.87,0L103.51,67.61a12,12,0,0,0,17,17l30.07-30.06a36,36,0,0,1,50.93,50.92L171.4,135.52a12,12,0,1,0,17,17l30.08-30.06A60.09,60.09,0,0,0,218.45,37.55ZM135.52,171.4l-30.07,30.08a36,36,0,0,1-50.92-50.93l30.06-30.07a12,12,0,0,0-17-17L37.55,133.58a60,60,0,0,0,84.88,84.87l30.06-30.07a12,12,0,0,0-17-17Z"/></svg>Lire la doc officielle</a>
+    <p>C’est la documentation officielle de Claude Code, la page sur l’usage et les coûts.</p>
+  </section>
+  <video class="video" src="video.mp4" poster="affiche.jpg" controls playsinline preload="none" width="540" height="960"></video>
+  <section class="fiche" aria-label="La fiche"><div class="fiche-case"><span>La commande</span><strong>/usage</strong></div><div class="fiche-case"><span>Forfaits</span><strong>Pro, Max, Team, Enterprise</strong></div><div class="fiche-case"><span>Conseils dès</span><strong>10 % de ton usage récent</strong></div><div class="fiche-case"><span>Raccourci</span><strong>f pour appliquer (v2.1.305+)</strong></div><div class="fiche-case"><span>Période</span><strong>24 heures ou 7 jours (touche d ou w)</strong></div><div class="fiche-case"><span>En gratuit</span><strong>Claude Code non inclus</strong></div></section>
+  <article class="texte"><h2>Ce que c’est</h2>
+<p>Dans Claude Code, tape <strong>/usage</strong>. Sur les forfaits Pro, Max, Team et Enterprise, tu vois ce qui consomme ton forfait :</p>
+<ul>
+<li><strong>La répartition</strong> : la part de chaque skill, sous-agent, plugin et serveur MCP dans ton usage récent, en pourcentage.</li>
+<li><strong>Des recommandations</strong> : une par ligne, dès qu’un poste pèse <strong>au moins 10 %</strong> de ton usage récent.</li>
+<li><strong>Tes tâches qui tournent en boucle</strong> (/loop), classées par consommation.</li>
+</ul>
+<p>Appuie sur <strong>d</strong> ou <strong>w</strong> pour passer des dernières 24 heures aux 7 derniers jours. Les chiffres viennent de cet ordi seulement : ton usage sur claude.ai ou un autre appareil n’y est pas.</p>
+<h2>Le raccourci f</h2>
+<p>Si le bas de l’écran affiche <strong>« f to fix »</strong>, appuie sur <strong>f</strong> : Claude Code applique les recommandations qu’il peut appliquer, et te montre chaque changement avant de le faire. Il faut Claude Code <strong>v2.1.305 ou plus</strong>.</p>
+<p>Bon à savoir : un pourcentage indique la part de ton usage concernée par la ligne, <strong>pas ce que tu vas économiser</strong>.</p>
+<h2>Mes 3 réflexes</h2>
+<blockquote>
+<p>Ce sont mes réflexes. Ils s’appuient sur la doc officielle.</p>
+</blockquote>
+<ol>
+<li><strong>/clear entre deux tâches sans rapport.</strong> La doc le dit : un vieux contexte coûte des jetons à chaque message. Et /clear ne coûte rien.</li>
+<li><strong>/model pour passer sur Sonnet quand c’est simple.</strong> La doc dit que Sonnet gère bien la plupart des tâches de code et coûte moins qu’Opus.</li>
+<li><strong>/usage une fois par semaine.</strong> Avec <strong>w</strong>, tu vois tes 7 derniers jours et ce qui a vraiment pesé.</li>
+</ol>
+<p>Bonus : <strong>/compact</strong> suivi d’une consigne (« garde les extraits de code ») résume la conversation en gardant ce que tu veux.</p>
+<h2>Pourquoi ton quota fond dans une longue session</h2>
+<p>La doc liste les causes les plus courantes :</p>
+<ul>
+<li><strong>Un long contexte</strong> : toute la conversation est renvoyée à chaque message.</li>
+<li><strong>Une pause trop longue</strong> : ton premier message après la pause relit tout ton contexte.</li>
+<li><strong>Les tâches programmées et les sous-agents</strong> : chacun envoie ses propres requêtes.</li>
+</ul>
+<h2>Le piège : le forfait</h2>
+<p>Claude Code <strong>n’est pas inclus dans l’offre gratuite</strong> de Claude. Il faut au moins <strong>Pro</strong> : 20 $ par mois au mois, ou 17 $ par mois en annuel (200 $ payés d’avance).</p></article>
+  <section class="bloc sources"><h2>Sources</h2><ul><li><a href="https://code.claude.com/docs/en/costs" rel="noopener">Doc Claude Code : gérer ses coûts</a></li><li><a href="https://claude.com/pricing" rel="noopener">Page des prix de Claude</a></li></ul><p>Vérifié le 24 octobre 2026.</p></section>
+  <section class="bloc">
+    <h2>Pour aller plus loin</h2>
+    <a class="carte-insta" href="https://www.instagram.com/shan.ksya/" rel="noopener"><svg class="bobby petit" width="56" height="43" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span><strong>Une actu IA comme ça chaque jour</strong><span>Suis Bobby AI sur Instagram</span></span><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg></a>
+    <a class="carte-guide" href="../../guides/notion-agents/">
+  <img src="../../guides/notion-agents/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">24 octobre 2026</span>
+    <span class="carte-titre">Les agents Notion bossent 24 heures, pour environ 90 % moins cher</span>
+    <span class="carte-sous">Ce qui a changé le 19 octobre, comment marche le mode Auto, et comment ne pas cramer tes crédits.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a><a class="carte-guide" href="../../guides/activepieces/">
+  <img src="../../guides/activepieces/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">24 octobre 2026</span>
+    <span class="carte-titre">L’alternative gratuite et open source à Zapier</span>
+    <span class="carte-sous">Activepieces relie tes applis en visuel, avec des étapes IA. Ce que couvre le plan gratuit, ta première automatisation, et le piège des crédits.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a>
+  </section>
+</main>
+<footer class="pied">
+  <p>Bobby AI n’est pas lié aux entreprises citées. Les infos viennent de leurs pages officielles.</p>
+  <p><a href="../../mentions-legales/">Mentions légales</a></p>
+</footer>
+</body>
+</html>
