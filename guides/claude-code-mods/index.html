@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les mods de Claude Code : ton interface, tes garde-fous | Bobby AI</title>
+<meta name="description" content="Depuis la 2.1.287, un mod peut dessiner un panneau, arrêter une commande dangereuse et remplacer ce que Claude Code affiche. Ce qu’ils font vraiment, et le piège à connaître avant d’en installer un.">
+<meta property="og:title" content="Les mods de Claude Code : ton interface, tes garde-fous | Bobby AI">
+<meta property="og:description" content="Depuis la 2.1.287, un mod peut dessiner un panneau, arrêter une commande dangereuse et remplacer ce que Claude Code affiche. Ce qu’ils font vraiment, et le piège à connaître avant d’en installer un.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bobby-ia.com/guides/claude-code-mods/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://bobby-ia.com/guides/claude-code-mods/apercu.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#090D15">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../statique/polices/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../statique/style.css">
+</head>
+<body>
+<main class="colonne guide">
+  <a class="retour" href="../../"><svg class="bobby petit" width="34" height="26" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span>Bobby AI</span></a>
+  <header class="guide-tete">
+    <p class="carte-date">Guide · 29 octobre 2026</p>
+    <h1>Les mods de Claude Code : ton interface, tes garde-fous</h1>
+    <p class="guide-sous">Depuis la 2.1.287, un mod peut dessiner un panneau, arrêter une commande dangereuse et remplacer ce que Claude Code affiche. Ce qu’ils font vraiment, et le piège à connaître avant d’en installer un.</p>
+  </header>
+  <section class="lien-principal">
+    <a class="bouton" href="https://code.claude.com/docs/en/plugins/mods/overview" rel="noopener"><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M87.5,151.52l64-64a12,12,0,0,1,17,17l-64,64a12,12,0,0,1-17-17Zm131-114a60.08,60.08,0,0,0-84.87,0L103.51,67.61a12,12,0,0,0,17,17l30.07-30.06a36,36,0,0,1,50.93,50.92L171.4,135.52a12,12,0,1,0,17,17l30.08-30.06A60.09,60.09,0,0,0,218.45,37.55ZM135.52,171.4l-30.07,30.08a36,36,0,0,1-50.92-50.93l30.06-30.07a12,12,0,0,0-17-17L37.55,133.58a60,60,0,0,0,84.88,84.87l30.06-30.07a12,12,0,0,0-17-17Z"/></svg>Lire la doc officielle des mods</a>
+    <p>C’est la page officielle de la documentation Claude Code sur les mods (en anglais).</p>
+  </section>
+  <video class="video" src="video.mp4" poster="affiche.jpg" controls playsinline preload="none" width="540" height="960"></video>
+  <section class="fiche" aria-label="La fiche"><div class="fiche-case"><span>Sorti le</span><strong>1er octobre 2026 (v2.1.287)</strong></div><div class="fiche-case"><span>Ce que c’est</span><strong>un plugin avec quelques fichiers JavaScript</strong></div><div class="fiche-case"><span>Ce qu’il peut dessiner</span><strong>un panneau, une bande au-dessus du prompt</strong></div><div class="fiche-case"><span>Ce qu’il peut arrêter</span><strong>une commande dangereuse, en te demandant</strong></div><div class="fiche-case"><span>Où ça marche</span><strong>terminal, appli Desktop, extension VS Code</strong></div><div class="fiche-case"><span>Le piège</span><strong>pas de sandbox : tes permissions, tes clés</strong></div></section>
+  <article class="texte"><h2>Ce que c’est</h2>
+<p>Le 1er octobre 2026, Claude Code a appris à charger des <strong>mods</strong> (version 2.1.287). Un mod est un plugin : un dossier avec un manifeste, un <code>hooks.json</code> et un fichier JavaScript ou TypeScript. Claude Code appelle ses fonctions quand un événement arrive, par exemple un appel d’outil, un prompt envoyé ou une partie de l’interface qui se dessine.</p>
+<p>La fonction peut alors <strong>observer</strong>, <strong>modifier</strong> ou <strong>prendre la main</strong> sur cet événement.</p>
+<p>Ça ressemble aux hooks de réglages, avec une différence de taille : un hook de réglages lance un script ou une requête HTTP depuis l’extérieur, alors qu’un mod tourne <strong>à l’intérieur</strong> de Claude Code. C’est ce qui lui permet de dessiner.</p>
+<h2>Ce qu’un mod peut faire</h2>
+<ol>
+<li><strong>Dessiner dans l’interface</strong> : un panneau à côté de la conversation, une bande au-dessus du prompt, avec des boutons, des onglets et des champs. Il peut aussi redessiner ce que Claude Code dessine lui-même, comme la ligne d’un appel d’outil, le spinner ou le dialogue des questions.</li>
+<li><strong>Retenir un appel d’outil</strong> : l’exemple officiel <code>blast-radius</code> attrape une commande risquée comme <code>rm -rf</code> ou un <code>git push --force</code>, montre ce qu’elle changerait, puis propose deux boutons : continuer ou annuler.</li>
+<li><strong>Transformer une idée en interface</strong> : tu décris ce que tu veux dans une session, Claude écrit le mod, tu le charges. Anthropic partage trois exemples complets : <code>token-weather</code> (la météo de ton contexte au-dessus du prompt), <code>blast-radius</code> et <code>replay-theater</code> (une commande <code>/replay</code> qui rejoue les dernières modifications).</li>
+</ol>
+<p>Un mod peut aussi ajouter une commande <code>/</code> qui lance ton code tout de suite, sans passer par un tour de Claude.</p>
+<h2>Où ça marche</h2>
+<ul>
+<li>Dans le terminal, avec Claude Code 2.1.287 ou plus.</li>
+<li>Dans l’onglet Code de l’appli Desktop, avec 2.1.286 ou plus.</li>
+<li>Dans l’extension VS Code, mais le dessin demande la version 2.1.299 ou plus.</li>
+<li>En <code>claude -p</code> et dans l’Agent SDK, les hooks tournent mais rien ne s’affiche.</li>
+<li>Dans une session WSL de l’appli Desktop, les plugins ne sont pas disponibles du tout.</li>
+</ul>
+<h2>Le piège</h2>
+<p><strong>Un mod n’est pas sandboxé.</strong> Il tourne avec tes permissions, et une fois chargé il peut :</p>
+<ul>
+<li>lire et écrire tes fichiers, lancer des programmes, faire des requêtes réseau ;</li>
+<li>lire tes secrets, donc tes variables d’environnement et tes fichiers de réglages, y compris une clé API ;</li>
+<li>voir chaque prompt et chaque appel d’outil ;</li>
+<li>approuver un appel à ta place, ou envoyer un message depuis une autre de tes sessions ;</li>
+<li>consommer ton forfait en appelant un modèle.</li>
+</ul>
+<p>La sandbox de Claude Code protège les commandes Bash. Un processus lancé par un mod tourne en dehors.</p>
+<p>Deux limites honnêtes : un mod ne peut pas modifier l’écran de demande de permission, et il ne peut pas changer ce que cet écran t’affiche.</p>
+<h2>Vérifier et couper</h2>
+<p>Avant d’installer, tu peux lister ce qu’un mod fait sans l’exécuter. Récupère ses fichiers, puis lance <code>claude plugin validate ./le-mod</code> : les lignes <code>hooks:</code> et <code>calls:</code> disent quels événements il écoute et ce qu’il demande (fichiers, réseau, processus).</p>
+<p>Pour le couper :</p>
+<ul>
+<li>un seul mod : l’onglet <strong>Installed</strong> de <code>/plugin</code> ;</li>
+<li>tous les mods pour une session : lancer Claude Code avec <code>--safe-mode</code> ;</li>
+<li>tous les mods que tu as installés, partout : <code>"disableAllHooks": true</code> dans <code>~/.claude/settings.json</code>. Attention, ça coupe aussi tes hooks de réglages et ta ligne de statut.</li>
+</ul>
+<h2>Mes 3 conseils</h2>
+<blockquote>
+<p>Ce sont mes conseils, pas ceux d’Anthropic.</p>
+</blockquote>
+<ol>
+<li><strong>Commence par les exemples officiels.</strong> Charge-les pour une seule session avec <code>--plugin-dir</code> : tu lis le code avant de l’exécuter, et rien n’est installé.</li>
+<li><strong>Lis les <code>calls:</code> avant d’installer.</strong> Un mod qui demande le réseau et la lecture de tes fichiers pour afficher une jauge de contexte, c’est un mauvais signe. Installe seulement ce que tu as lu.</li>
+<li><strong>Écris le tien.</strong> Quelques dizaines de lignes suffisent pour un panneau. C’est du code que tu peux relire, et tu n’as personne d’autre à croire sur parole.</li>
+</ol>
+<h2>Ce qui marche encore mal</h2>
+<ul>
+<li>Le dessin ne suit pas partout : rien en <code>claude -p</code>, rien dans l’Agent SDK, rien en WSL.</li>
+<li>L’extension VS Code a besoin de la 2.1.299 pour afficher ce qu’un mod dessine.</li>
+<li>Un mod ne peut pas toucher à l’écran de permission, volontairement.</li>
+<li>Les exemples d’Anthropic sont fournis tels quels, sans support.</li>
+</ul>
+<h2>Tu es en France ?</h2>
+<p>Oui, les mods marchent ici : ils sont activés par défaut, sans restriction de pays, avec un abonnement Claude ou une clé API, y compris en passant par Bedrock, Vertex ou Foundry. Le seul vrai frein, c’est la version de Claude Code : 2.1.287 en terminal, 2.1.286 dans l’appli Desktop.</p></article>
+  <section class="bloc sources"><h2>Sources</h2><ul><li><a href="https://code.claude.com/docs/en/plugins/mods/overview" rel="noopener">Mods overview (documentation Claude Code)</a></li><li><a href="https://code.claude.com/docs/en/changelog" rel="noopener">Changelog de Claude Code, version 2.1.287 du 1er octobre 2026</a></li><li><a href="https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods" rel="noopener">Les mods d’exemple d’Anthropic (claude-code-playground)</a></li></ul><p>Vérifié le 29 octobre 2026.</p></section>
+  <section class="bloc">
+    <h2>Pour aller plus loin</h2>
+    <a class="carte-insta" href="https://www.instagram.com/shan.ksya/" rel="noopener"><svg class="bobby petit" width="56" height="43" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span><strong>Une actu IA comme ça chaque jour</strong><span>Suis Bobby AI sur Instagram</span></span><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg></a>
+    <a class="carte-guide" href="../../guides/gemini-milliard/">
+  <img src="../../guides/gemini-milliard/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">29 octobre 2026</span>
+    <span class="carte-titre">Gemini passe le milliard : a-t-il battu ChatGPT ?</span>
+    <span class="carte-sous">Google annonce un milliard d’utilisateurs pour Gemini. Pourquoi ce chiffre ne se compare pas aux 900 millions de ChatGPT.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a><a class="carte-guide" href="../../guides/meta-actions/">
+  <img src="../../guides/meta-actions/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">29 octobre 2026</span>
+    <span class="carte-titre">Meta vend ses actions pour payer l’IA</span>
+    <span class="carte-sous">82 milliards en banque, et pourtant 35 milliards d’actions mises en vente. Les vrais chiffres, et pourquoi ses vendeurs de puces veulent en acheter.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a>
+  </section>
+</main>
+<footer class="pied">
+  <p>Bobby AI n’est pas lié aux entreprises citées. Les infos viennent de leurs pages officielles.</p>
+  <p><a href="../../mentions-legales/">Mentions légales</a> · <a href="../../confidentialite/">Confidentialité</a> · <a href="../../cookies/" data-audience-preferences aria-controls="audience-panneau" aria-expanded="false">Gérer mes cookies</a></p>
+</footer>
+<section class="audience-panneau" id="audience-panneau" aria-labelledby="audience-titre" hidden>
+  <h2 id="audience-titre">Des cookies pour les statistiques ?</h2>
+  <p>Avec votre accord, un cookie permet de compter les navigateurs uniques. Aucun nom ni email n'est associé à ce suivi, et aucune publicité n'est ciblée.</p>
+  <p class="audience-note">Sans accord, seuls les totaux sans identifiant restent actifs. Vous pouvez changer d'avis avec « Gérer mes cookies ». <a href="../../confidentialite/">En savoir plus</a></p>
+  <div class="audience-actions"><button type="button" data-audience-choix="oui">Accepter</button><button type="button" data-audience-choix="non">Refuser</button><button type="button" data-audience-fermer hidden>Fermer</button></div>
+  <p id="audience-erreur" role="status" hidden></p>
+</section>
+<script type="module" src="../../statique/audience.js"></script>
+</body>
+</html>
