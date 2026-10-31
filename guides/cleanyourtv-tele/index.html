@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CleanYourTV, la télé Android sans pubs façon Apple TV | Bobby AI</title>
+<meta name="description" content="Un projet open source qui coupe les pubs et le pistage de ta télé Android, et lui met un accueil noir façon Apple TV. C’est ton assistant IA qui fait le travail.">
+<meta property="og:title" content="CleanYourTV, la télé Android sans pubs façon Apple TV | Bobby AI">
+<meta property="og:description" content="Un projet open source qui coupe les pubs et le pistage de ta télé Android, et lui met un accueil noir façon Apple TV. C’est ton assistant IA qui fait le travail.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bobby-ia.com/guides/cleanyourtv-tele/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://bobby-ia.com/guides/cleanyourtv-tele/apercu.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#090D15">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../statique/polices/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../statique/style.css">
+</head>
+<body>
+<main class="colonne guide">
+  <a class="retour" href="../../"><svg class="bobby petit" width="34" height="26" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span>Bobby AI</span></a>
+  <header class="guide-tete">
+    <p class="carte-date">Guide · 29 octobre 2026</p>
+    <h1>CleanYourTV, la télé Android sans pubs façon Apple TV</h1>
+    <p class="guide-sous">Un projet open source qui coupe les pubs et le pistage de ta télé Android, et lui met un accueil noir façon Apple TV. C’est ton assistant IA qui fait le travail.</p>
+  </header>
+  <section class="lien-principal">
+    <a class="bouton" href="https://cleanyour.tv" rel="noopener"><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M87.5,151.52l64-64a12,12,0,0,1,17,17l-64,64a12,12,0,0,1-17-17Zm131-114a60.08,60.08,0,0,0-84.87,0L103.51,67.61a12,12,0,0,0,17,17l30.07-30.06a36,36,0,0,1,50.93,50.92L171.4,135.52a12,12,0,1,0,17,17l30.08-30.06A60.09,60.09,0,0,0,218.45,37.55ZM135.52,171.4l-30.07,30.08a36,36,0,0,1-50.92-50.93l30.06-30.07a12,12,0,0,0-17-17L37.55,133.58a60,60,0,0,0,84.88,84.87l30.06-30.07a12,12,0,0,0-17-17Z"/></svg>Ouvrir CleanYourTV</a>
+    <p>C’est le site officiel. Attention : cleanyourtv.com n’est pas tenu par le projet.</p>
+  </section>
+  <video class="video" src="video.mp4" poster="affiche.jpg" controls playsinline preload="none" width="540" height="960"></video>
+  <section class="fiche" aria-label="La fiche"><div class="fiche-case"><span>Prix</span><strong>Gratuit (licence MIT)</strong></div><div class="fiche-case"><span>Télés</span><strong>Android TV et Google TV</strong></div><div class="fiche-case"><span>Pas compatibles</span><strong>Samsung, LG, Fire TV</strong></div><div class="fiche-case"><span>Durée</span><strong>Environ 15 minutes avec un assistant IA</strong></div><div class="fiche-case"><span>Retour arrière</span><strong>Une commande remet tout comme avant</strong></div><div class="fiche-case"><span>Apple TV 4K</span><strong>349 € sur apple.com</strong></div></section>
+  <article class="texte"><h2>Ce que c’est</h2>
+<p>CleanYourTV est un projet <strong>gratuit et open source</strong> pour les télés <strong>Android TV et Google TV</strong>. Il coupe les <strong>pubs</strong>, le <strong>pistage</strong> et les applis préinstallées que tu n’as jamais demandées, puis il met un <strong>écran d’accueil noir et épuré</strong>, façon Apple TV.</p>
+<p>Le 29 octobre 2026, son dépôt GitHub avait <strong>44 552 étoiles</strong>, 12 jours après sa création.</p>
+<h2>Ce que ça change sur ta télé</h2>
+<ul>
+<li><strong>Plus de lignes sponsorisées</strong> ni de pubs sur l’accueil.</li>
+<li><strong>Plus de pistage</strong> : les services de mesure du fabricant sont coupés.</li>
+<li><strong>Un accueil propre</strong> : tes 4 applis préférées en bas, les autres dans une grille, l’heure en haut.</li>
+<li><strong>Rien n’est désinstallé.</strong> Tout est seulement désactivé, et une commande remet ta télé <strong>exactement comme avant</strong>.</li>
+</ul>
+<h2>Ta télé est compatible ?</h2>
+<ul>
+<li><strong>Oui</strong> si c’est une Android TV ou une Google TV : Xiaomi, TCL, Hisense, Sony, OnePlus, Realme, Nvidia Shield et la plupart des autres. Le site annonce 359 modèles testés.</li>
+<li><strong>Non</strong> pour Samsung (Tizen), LG (webOS) et Fire TV. Pour ces télés, le site a un guide pour couper le pistage avec la télécommande.</li>
+</ul>
+<h2>Comment faire</h2>
+<p>Il te faut un <strong>ordi sur le même Wi-Fi que la télé</strong> et un <strong>assistant IA de code</strong> (Claude Code, Codex…).</p>
+<ol>
+<li><strong>Sur la télé</strong> : Paramètres, Préférences de l’appareil, À propos. Appuie <strong>7 fois sur « Build »</strong>. Reviens en arrière, ouvre les Options pour les développeurs et active le <strong>débogage</strong> (USB, et réseau s’il y en a un).</li>
+<li><strong>Sur l’ordi</strong> : télécharge le dépôt GitHub, ouvre-le dans ton assistant IA, colle le fichier <strong>PROMPT.md</strong> et indique le modèle de ta télé.</li>
+<li><strong>Suis le guide</strong> : accepte la demande de débogage sur la télé, puis réponds aux questions (tes applis, l’ordre du dock, garder ou pas l’assistant vocal et Chromecast).</li>
+</ol>
+<p>L’assistant sauvegarde, nettoie, installe le nouvel accueil et vérifie chaque étape avec des captures de ta télé. Compte <strong>un quart d’heure</strong>.</p>
+<p>Tu n’as qu’un téléphone Android ? Une appli faite par la communauté fait la même chose sans ordi : elle est sur <a href="https://cleanyour.tv/app">cleanyour.tv/app</a>.</p>
+<h2>Le piège : quelques outils à installer</h2>
+<ul>
+<li>Si ton assistant installe le nouvel accueil lui-même, ton ordi a besoin de <strong>Python 3</strong>, d’un <strong>Java (JDK 17 à 22)</strong> et du <strong>SDK Android 34</strong>. L’assistant peut t’aider à les installer.</li>
+<li>Méfie-toi des faux sites : seuls <strong>cleanyour.tv</strong> et le dépôt GitHub sont officiels.</li>
+</ul>
+<h2>Mes 3 conseils</h2>
+<blockquote>
+<p>Ce sont mes conseils, pas des règles de CleanYourTV.</p>
+</blockquote>
+<ol>
+<li><strong>Note les applis que tu utilises vraiment</strong> avant de commencer : l’assistant te les demandera.</li>
+<li><strong>Garde l’assistant vocal</strong> si tu cherches tes films à la voix. Tu peux tout couper sauf lui.</li>
+<li><strong>Fais-le un soir tranquille</strong>, pas cinq minutes avant le match : il faut rester devant la télé pour valider.</li>
+</ol>
+<h2>Combien tu économises</h2>
+<p>La nouvelle <strong>Apple TV 4K coûte 349 €</strong> sur apple.com. CleanYourTV te donne un accueil dans le même esprit sur la télé que tu as déjà, pour <strong>0 €</strong>.</p></article>
+  <section class="bloc sources"><h2>Sources</h2><ul><li><a href="https://github.com/Gathin23/cleanyourtv" rel="noopener">Dépôt GitHub de CleanYourTV</a></li><li><a href="https://cleanyour.tv" rel="noopener">Site officiel de CleanYourTV</a></li><li><a href="https://www.apple.com/fr/shop/buy-tv/apple-tv-4k" rel="noopener">Prix de l’Apple TV 4K</a></li></ul><p>Vérifié le 29 octobre 2026.</p></section>
+  <section class="bloc">
+    <h2>Pour aller plus loin</h2>
+    <a class="carte-insta" href="https://www.instagram.com/shan.ksya/" rel="noopener"><svg class="bobby petit" width="56" height="43" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span><strong>Une actu IA comme ça chaque jour</strong><span>Suis Bobby AI sur Instagram</span></span><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg></a>
+    <a class="carte-guide" href="../../guides/ecc-equipe-ia/">
+  <img src="../../guides/ecc-equipe-ia/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">31 octobre 2026</span>
+    <span class="carte-titre">ECC : une équipe d’agents pour ton code</span>
+    <span class="carte-sous">Planifier, coder, relire et tester avec des agents spécialisés. Voici comment démarrer.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a><a class="carte-guide" href="../../guides/carte-ia/">
+  <img src="../../guides/carte-ia/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">29 octobre 2026</span>
+    <span class="carte-titre">81 % des adultes n’utilisent pas l’IA : la carte du monde en 2 500 carrés</span>
+    <span class="carte-sous">Les chiffres de l’adoption, ce qu’ils disent de toi, et pourquoi presque personne ne paie.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a>
+  </section>
+</main>
+<footer class="pied">
+  <p>Bobby AI n’est pas lié aux entreprises citées. Les infos viennent de leurs pages officielles.</p>
+  <p><a href="../../mentions-legales/">Mentions légales</a> · <a href="../../confidentialite/">Confidentialité</a> · <a href="../../cookies/" data-audience-preferences aria-controls="audience-panneau" aria-expanded="false">Gérer mes cookies</a></p>
+</footer>
+<section class="audience-panneau" id="audience-panneau" aria-labelledby="audience-titre" hidden>
+  <h2 id="audience-titre">Des cookies pour les statistiques ?</h2>
+  <p>Avec votre accord, un cookie permet de compter les navigateurs uniques. Aucun nom ni email n'est associé à ce suivi, et aucune publicité n'est ciblée.</p>
+  <p class="audience-note">Sans accord, seuls les totaux sans identifiant restent actifs. Vous pouvez changer d'avis avec « Gérer mes cookies ». <a href="../../confidentialite/">En savoir plus</a></p>
+  <div class="audience-actions"><button type="button" data-audience-choix="oui">Accepter</button><button type="button" data-audience-choix="non">Refuser</button><button type="button" data-audience-fermer hidden>Fermer</button></div>
+  <p id="audience-erreur" role="status" hidden></p>
+</section>
+<script type="module" src="../../statique/audience.js"></script>
+</body>
+</html>
