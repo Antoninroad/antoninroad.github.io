@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ECC : une équipe d’agents pour ton code | Bobby AI</title>
+<meta name="description" content="Planifier, coder, relire et tester avec des agents spécialisés. Voici comment démarrer.">
+<meta property="og:title" content="ECC : une équipe d’agents pour ton code | Bobby AI">
+<meta property="og:description" content="Planifier, coder, relire et tester avec des agents spécialisés. Voici comment démarrer.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bobby-ia.com/guides/ecc-equipe-ia/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://bobby-ia.com/guides/ecc-equipe-ia/apercu.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#090D15">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../statique/polices/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../statique/style.css">
+</head>
+<body>
+<main class="colonne guide">
+  <a class="retour" href="../../"><svg class="bobby petit" width="34" height="26" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span>Bobby AI</span></a>
+  <header class="guide-tete">
+    <p class="carte-date">Guide · 31 octobre 2026</p>
+    <h1>ECC : une équipe d’agents pour ton code</h1>
+    <p class="guide-sous">Planifier, coder, relire et tester avec des agents spécialisés. Voici comment démarrer.</p>
+  </header>
+  <section class="lien-principal">
+    <a class="bouton" href="https://github.com/affaan-m/ECC" rel="noopener"><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M87.5,151.52l64-64a12,12,0,0,1,17,17l-64,64a12,12,0,0,1-17-17Zm131-114a60.08,60.08,0,0,0-84.87,0L103.51,67.61a12,12,0,0,0,17,17l30.07-30.06a36,36,0,0,1,50.93,50.92L171.4,135.52a12,12,0,1,0,17,17l30.08-30.06A60.09,60.09,0,0,0,218.45,37.55ZM135.52,171.4l-30.07,30.08a36,36,0,0,1-50.92-50.93l30.06-30.07a12,12,0,0,0-17-17L37.55,133.58a60,60,0,0,0,84.88,84.87l30.06-30.07a12,12,0,0,0-17-17Z"/></svg>Ouvrir le dépôt officiel ECC</a>
+    <p>Le pack est open source sous licence MIT. L’usage de ton assistant ou de son modèle reste soumis à ses propres tarifs.</p>
+  </section>
+  <video class="video" src="video.mp4" poster="affiche.jpg" controls playsinline preload="none" width="540" height="960"></video>
+  <section class="fiche" aria-label="La fiche"><div class="fiche-case"><span>Le pack</span><strong>ECC, anciennement Everything Claude Code</strong></div><div class="fiche-case"><span>Les agents</span><strong>71 annoncés dans le README</strong></div><div class="fiche-case"><span>Les compétences</span><strong>311 annoncées dans le README</strong></div><div class="fiche-case"><span>Le prix du pack</span><strong>Gratuit, licence MIT</strong></div><div class="fiche-case"><span>L’installation montrée</span><strong>Plugin natif Claude Code</strong></div><div class="fiche-case"><span>Les chiffres</span><strong>Vérifiés le 29 octobre 2026</strong></div></section>
+  <article class="texte"><h2>Ce que c’est</h2>
+<p>ECC est un ensemble d’agents spécialisés, de compétences, de règles et d’outils qui organisent le travail de ton assistant de programmation. Le projet propose une méthode : préparer le plan, écrire des tests, implémenter, relire et vérifier.</p>
+<p>Le README consulté le <strong>29 octobre 2026</strong> annonce <strong>71 agents et 311 compétences</strong>. Le dépôt comptait <strong>292 240 étoiles</strong> lors du relevé. Ces chiffres évoluent ; la vidéo utilise le seuil « plus de 290 000 ».</p>
+<h2>Ce que tu peux lui demander</h2>
+<ul>
+<li><strong>Planifier</strong> : examiner le projet et proposer l’architecture ainsi que les étapes d’une fonctionnalité.</li>
+<li><strong>Développer</strong> : implémenter le changement et aider à réparer les erreurs de construction.</li>
+<li><strong>Relire</strong> : rechercher les défauts et les risques de sécurité, puis proposer des corrections.</li>
+<li><strong>Tester</strong> : écrire ou exécuter des tests et examiner les résultats.</li>
+</ul>
+<p>Les phrases de la vidéo sont des exemples de demandes. Elles ne sont pas quatre commandes universelles qui garantissent le même comportement dans tous les assistants. Les scènes 3D illustrent ces usages ; ce ne sont pas des enregistrements d’exécution.</p>
+<h2>Installation dans Claude Code</h2>
+<p>Si ECC n’est pas déjà installé, les deux commandes natives indiquées par le dépôt sont :</p>
+<pre><code class="language-text">/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin install ecc@ecc
+</code></pre>
+<p>Exécute-les dans <strong>Claude Code</strong>. Elles ne sont pas des commandes à copier telles quelles dans tous les outils. Consulte les informations et permissions présentées par l’installateur.</p>
+<p>Si ECC est déjà présent, commence par consulter son état et sa documentation de mise à jour. Ne superpose pas une installation manuelle complète au plugin : le dépôt prévient que cela peut dupliquer compétences, commandes et hooks.</p>
+<h2>Et pour les autres assistants ?</h2>
+<p>Le README décrit également un plugin natif pour Codex et des adaptateurs pour d’autres environnements, dont Cursor. Les fonctions disponibles ne sont pas toutes identiques : utilise la rubrique d’installation et la matrice de compatibilité correspondant à ton outil dans le dépôt officiel.</p>
+<p>La vidéo montre les commandes de <strong>Claude Code uniquement</strong>. L’existence d’un adaptateur ne signifie pas une parité complète avec ce plugin.</p>
+<h2>Ce qui est gratuit</h2>
+<p>Le code d’ECC est distribué sous licence MIT. Installer le pack ne fournit pas automatiquement les crédits ou l’abonnement du modèle qui exécute les tâches. Le coût dépend de l’assistant et du fournisseur que tu utilises.</p>
+<p>Des agents supplémentaires peuvent aussi multiplier les appels au modèle : garde un œil sur l’usage pendant tes premiers essais.</p>
+<h2>Mes trois conseils pour démarrer</h2>
+<blockquote>
+<p>Ce sont mes conseils pratiques, pas des promesses de l’auteur du projet.</p>
+</blockquote>
+<ol>
+<li><strong>Commence par une petite tâche vérifiable.</strong> Par exemple, ajouter un test à une fonction existante ou corriger un bug bien décrit.</li>
+<li><strong>Ajoute les compétences utiles à ton projet.</strong> Tu n’as pas besoin d’utiliser tout le catalogue à chaque demande.</li>
+<li><strong>Relis le résultat et exécute les tests.</strong> Vérifie les changements réels, les échecs et les limites signalées avant de publier.</li>
+</ol>
+<h2>Les limites à garder en tête</h2>
+<p>Une revue de sécurité aide à trouver des failles ; elle ne garantit pas une application invulnérable. De même, un pourcentage de couverture de tests ne prouve pas qu’un logiciel fonctionne dans toutes les situations.</p>
+<p>ECC organise et enrichit le travail de l’assistant. La qualité finale dépend aussi du modèle, du contexte fourni et des vérifications réalisées sur le projet.</p></article>
+  <section class="bloc sources"><h2>Sources</h2><ul><li><a href="https://github.com/affaan-m/ECC#readme" rel="noopener">README officiel et installation</a></li><li><a href="https://github.com/affaan-m/ECC/tree/main/agents" rel="noopener">Agents du dépôt</a></li><li><a href="https://github.com/affaan-m/ECC/tree/main/skills" rel="noopener">Compétences du dépôt</a></li><li><a href="https://github.com/affaan-m/ECC/blob/main/LICENSE" rel="noopener">Licence MIT</a></li></ul><p>Vérifié le 31 octobre 2026.</p></section>
+  <section class="bloc">
+    <h2>Pour aller plus loin</h2>
+    <a class="carte-insta" href="https://www.instagram.com/shan.ksya/" rel="noopener"><svg class="bobby petit" width="56" height="43" viewBox="0 0 13 10" shape-rendering="crispEdges" aria-hidden="true"><circle class="antenne" cx="6.5" cy="0.5" r="1.4" fill="#FFD166" opacity=".25"/><rect x="6" y="0" width="1.02" height="1.02" fill="#FFD166"/><rect x="6" y="1" width="1.02" height="1.02" fill="#B9B2FF"/><rect x="2" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="2" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="3" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="3" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="4" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="4" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="6" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="7" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="8" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="5" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="5" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="1" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="4" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="5" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="6" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="7" y="6" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="9" y="6" width="1.02" height="1.02" fill="#121624"/><rect x="10" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="11" y="6" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="2" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="10" y="7" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="3" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="4" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="5" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="6" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="7" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="8" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="8" width="1.02" height="1.02" fill="#5B4BE0"/><rect x="3" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="4" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="8" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><rect x="9" y="9" width="1.02" height="1.02" fill="#7C6CFF"/><g class="yeux"><rect x="4" y="4" width="1.02" height="1.02" fill="#5EF2D6"/><rect x="8" y="4" width="1.02" height="1.02" fill="#5EF2D6"/></g></svg><span><strong>Une actu IA comme ça chaque jour</strong><span>Suis Bobby AI sur Instagram</span></span><svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg></a>
+    <a class="carte-guide" href="../../guides/carte-ia/">
+  <img src="../../guides/carte-ia/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">29 octobre 2026</span>
+    <span class="carte-titre">81 % des adultes n’utilisent pas l’IA : la carte du monde en 2 500 carrés</span>
+    <span class="carte-sous">Les chiffres de l’adoption, ce qu’ils disent de toi, et pourquoi presque personne ne paie.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a><a class="carte-guide" href="../../guides/claude-code-mods/">
+  <img src="../../guides/claude-code-mods/affiche.jpg" alt="" width="540" height="960" loading="lazy">
+  <span class="carte-texte">
+    <span class="carte-date">29 octobre 2026</span>
+    <span class="carte-titre">Les mods de Claude Code : ton interface, tes garde-fous</span>
+    <span class="carte-sous">Depuis la 2.1.287, un mod peut dessiner un panneau, arrêter une commande dangereuse et remplacer ce que Claude Code affiche. Ce qu’ils font vraiment, et le piège à connaître avant d’en installer un.</span>
+  </span>
+  <svg class="icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+</a>
+  </section>
+</main>
+<footer class="pied">
+  <p>Bobby AI n’est pas lié aux entreprises citées. Les infos viennent de leurs pages officielles.</p>
+  <p><a href="../../mentions-legales/">Mentions légales</a> · <a href="../../confidentialite/">Confidentialité</a> · <a href="../../cookies/" data-audience-preferences aria-controls="audience-panneau" aria-expanded="false">Gérer mes cookies</a></p>
+</footer>
+<section class="audience-panneau" id="audience-panneau" aria-labelledby="audience-titre" hidden>
+  <h2 id="audience-titre">Des cookies pour les statistiques ?</h2>
+  <p>Avec votre accord, un cookie permet de compter les navigateurs uniques. Aucun nom ni email n'est associé à ce suivi, et aucune publicité n'est ciblée.</p>
+  <p class="audience-note">Sans accord, seuls les totaux sans identifiant restent actifs. Vous pouvez changer d'avis avec « Gérer mes cookies ». <a href="../../confidentialite/">En savoir plus</a></p>
+  <div class="audience-actions"><button type="button" data-audience-choix="oui">Accepter</button><button type="button" data-audience-choix="non">Refuser</button><button type="button" data-audience-fermer hidden>Fermer</button></div>
+  <p id="audience-erreur" role="status" hidden></p>
+</section>
+<script type="module" src="../../statique/audience.js"></script>
+</body>
+</html>
